@@ -19,6 +19,7 @@ let MainButton = React.createClass({
       iconRestingText,
       iconActiveClass,
       iconActiveText,
+      label,
       ...other
     } = this.props
 
