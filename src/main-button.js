@@ -27,10 +27,12 @@ let MainButton = React.createClass({
     let _iconRestingClass = classnames('mfb-component__main-icon--resting', iconRestingClass);
     let _iconActiveClass = classnames('mfb-component__main-icon--active', iconActiveClass);
 
-    <a {...other} className={_className} data-mfb-label={label}>
-      <i className={_iconRestingClass}>{iconRestingText}</i>
-      <i className={_iconActiveClass}>{iconActiveText}</i>
-    </a>
+    return (
+      <a {...other} className={_className} data-mfb-label={label}>
+        <i className={_iconRestingClass}>{iconRestingText}</i>
+        <i className={_iconActiveClass}>{iconActiveText}</i>
+      </a>
+    )
   }
 });
 
