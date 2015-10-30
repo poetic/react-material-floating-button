@@ -1,6 +1,6 @@
 {
   "name": "poetic-react-mfb",
-  "version": "0.3.0",
+  "version": "0.3.0.1",
   "description": "React component for a material menu à la Google Inbox and Evernote",
   "author": "Nobita",
   "contributors": [],
@@ -15,6 +15,10 @@
     "index.js",
     "mfb.css",
     "mfb.css.map",
+    "_/_fountain.scss",
+    "_/_slidein.scss",
+    "_/_slidein-spring.scss",
+    "_/_zoomin.scss",
     "mfb.scss",
     "build"
   ],

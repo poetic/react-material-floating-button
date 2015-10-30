@@ -29,7 +29,7 @@ gulp.task('scss-modules', function () {
     './mfb/src/_/_fountain.scss',
     './mfb/src/_/_slidein-spring.scss',
     './mfb/src/_/_slidein.scss',
-    './mfb/src/_/_slidein.scss',
+    './mfb/src/_/_zoomin.scss',
   ])
     .pipe(gulp.dest('./_/'))
 });
