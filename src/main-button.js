@@ -8,29 +8,38 @@ let MainButton = React.createClass({
     return {
       href: '#',
       onClick: function(){},
-      iconRestingClass: '',
-      iconActiveClass: '',
+      iconRestingClassName: '',
+      iconActiveClassName: '',
     };
   },
   render: function(){
     let {
       className,
-      iconRestingClass,
+      iconRestingClassName,
       iconRestingText,
-      iconActiveClass,
+      iconActiveClassName,
       iconActiveText,
       label,
       ...other
-    } = this.props
+    } = this.props;
 
-    let _className = classnames('mfb-component__button--main', className);
-    let _iconRestingClass = classnames('mfb-component__main-icon--resting', iconRestingClass);
-    let _iconActiveClass = classnames('mfb-component__main-icon--active', iconActiveClass);
+    let _className = classnames(
+      'mfb-component__button--main',
+      className
+    );
+    let _iconRestingClassName = classnames(
+      'mfb-component__main-icon--resting',
+      iconRestingClassName
+    );
+    let _iconActiveClassName = classnames(
+      'mfb-component__main-icon--active',
+      iconActiveClassName
+    );
 
     return (
       <a {...other} className={_className} data-mfb-label={label}>
-        <i className={_iconRestingClass}>{iconRestingText}</i>
-        <i className={_iconActiveClass}>{iconActiveText}</i>
+        <i className={_iconRestingClassName}>{iconRestingText}</i>
+        <i className={_iconActiveClassName}>{iconActiveText}</i>
       </a>
     )
   }
