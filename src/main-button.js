@@ -16,7 +16,9 @@ let MainButton = React.createClass({
     let {
       className,
       iconRestingClass,
+      iconRestingText,
       iconActiveClass,
+      iconActiveText,
       ...other
     } = this.props
 
@@ -25,8 +27,8 @@ let MainButton = React.createClass({
     let _iconActiveClass = classnames('mfb-component__main-icon--active', iconActiveClass);
 
     <a {...other} className={_className} data-mfb-label={label}>
-      <i className={_iconRestingClass}></i>
-      <i className={_iconActiveClass}></i>
+      <i className={_iconRestingClass}>{iconRestingText}</i>
+      <i className={_iconActiveClass}>{iconActiveText}</i>
     </a>
   }
 });

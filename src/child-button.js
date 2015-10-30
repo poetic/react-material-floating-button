@@ -21,7 +21,7 @@ let ChildButton = React.createClass({
         <a {...other}
           data-mfb-label={label}
           className={_className}>
-          <i className={_iconClassName}>iconText</i>
+          <i className={_iconClassName}>{iconText}</i>
         </a>
       </li>
     );
