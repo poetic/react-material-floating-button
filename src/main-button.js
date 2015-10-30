@@ -1,37 +1,33 @@
 'use strict';
 
-var React = require('react');
-var classnames = require('classnames');
+const React = require('react');
+const classnames = require('classnames');
 
-var MainButton = React.createClass({
+let MainButton = React.createClass({
   getDefaultProps: function(){
     return {
       href: '#',
       onClick: function(){},
-      iconResting: '',
-      iconActive: '',
-      label: null
+      iconRestingClass: '',
+      iconActiveClass: '',
     };
   },
   render: function(){
-    var iconResting = classnames('mfb-component__main-icon--resting', this.props.iconResting);
-    var iconActive = classnames('mfb-component__main-icon--active', this.props.iconActive);
-    var mainClass = classnames('mfb-component__button--main', this.props.className);
-    if(this.props.label){
-      return (
-        <a href={this.props.href} className={mainClass} onClick={this.props.onClick} data-mfb-label={this.props.label}>
-          <i className={iconResting}></i>
-          <i className={iconActive}></i>
-        </a>
-      );
-    } else {
-      return (
-        <a href={this.props.href} className={mainClass} onClick={this.props.onClick}>
-          <i className={iconResting}></i>
-          <i className={iconActive}></i>
-        </a>
-      );
-    }
+    let {
+      className,
+      iconRestingClass,
+      iconActiveClass,
+      ...other
+    } = this.props
+
+    let _className = classnames('mfb-component__button--main', className);
+    let _iconRestingClass = classnames('mfb-component__main-icon--resting', iconRestingClass);
+    let _iconActiveClass = classnames('mfb-component__main-icon--active', iconActiveClass);
+
+    <a {...other} className={_className} data-mfb-label={label}>
+      <i className={_iconRestingClass}></i>
+      <i className={_iconActiveClass}></i>
+    </a>
   }
 });
 

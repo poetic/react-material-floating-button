@@ -1,19 +1,27 @@
 'use strict';
 
-var React = require('react');
-var classnames = require('classnames');
+const React = require('react');
+const classnames = require('classnames');
 
-var ChildButton = React.createClass({
+let ChildButton = React.createClass({
   render: function(){
-    var iconClass = classnames('mfb-component__child-icon', this.props.icon);
-    var className = classnames('mfb-component__button--child', this.props.className);
+    let {
+      label,
+      className,
+      iconClassName,
+      iconText,
+      ...other
+    } = this.props;
+
+    let _className = classnames('mfb-component__button--child', className);
+    let _iconClassName = classnames('mfb-component__child-icon', iconClassName);
+
     return (
       <li>
-        <a href={this.props.href}
-           data-mfb-label={this.props.label}
-           onClick={this.props.onClick}
-           className={className}>
-          <i className={iconClass}></i>
+        <a {...other}
+          data-mfb-label={label}
+          className={_className}>
+          <i className={_iconClassName}>iconText</i>
         </a>
       </li>
     );

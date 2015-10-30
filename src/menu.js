@@ -1,12 +1,12 @@
 'use strict';
 
-var React = require('react');
+const React = require('react');
 
-var getClasses = require('./utils/get-classes');
-var getChildren = require('./utils/get-children');
-var childrenValidator = require('./utils/children-validator');
+const getClasses = require('./utils/get-classes');
+const getChildren = require('./utils/get-children');
+const childrenValidator = require('./utils/children-validator');
 
-var Menu = React.createClass({
+let Menu = React.createClass({
 
   propTypes: {
     effect: React.PropTypes.oneOf(['zoomin', 'slidein', 'slidein-spring', 'fountain']).isRequired,
@@ -33,15 +33,15 @@ var Menu = React.createClass({
   },
 
   render: function() {
-    var classes = getClasses(this.props);
-    var buttons = getChildren(this.props.children);
+    let _className = getClasses(this.props);
+    let buttons = getChildren(this.props.children);
 
-    var main = buttons.main && React.cloneElement(buttons.main, {
+    let main = buttons.main && React.cloneElement(buttons.main, {
       onClick: this.toggleMenu
     });
 
     return (
-      <ul className={classes}
+      <ul className={_className}
           data-mfb-toggle={this.props.method}
           data-mfb-state={this.state.isOpen ? 'open' : 'closed'}>
         <li className="mfb-component__wrap">

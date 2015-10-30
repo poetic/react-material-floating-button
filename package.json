@@ -1,10 +1,10 @@
 {
-  "name": "react-mfb",
+  "name": "poetic-react-mfb",
   "version": "0.3.0",
   "description": "React component for a material menu à la Google Inbox and Evernote",
   "author": "Nobita",
   "contributors": [],
-  "repository": "nobitagit/react-material-floating-button",
+  "repository": "poetic/react-material-floating-button",
   "license": "MIT",
   "engines": {
     "node": ">= 0.10"
@@ -40,7 +40,7 @@
     "grunt-gh-pages": "^0.9.1",
     "grunt-usemin": "^3.0.0",
     "gulp": "^3.8.11",
-    "gulp-babel": "^4.0.0",
+    "gulp-babel": "^5.0.0",
     "reactify": "^1.0.0"
   },
   "keywords": [
