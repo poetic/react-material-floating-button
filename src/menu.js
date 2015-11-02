@@ -90,7 +90,7 @@ let Menu = React.createClass({
           <li className="mfb-component__wrap">
             {main}
             <ul className="mfb-component__list">
-              {buttons.child}
+              {buttons.children}
             </ul>
           </li>
         </ul>

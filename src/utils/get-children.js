@@ -3,19 +3,20 @@
 var Children = require('react').Children;
 
 var MainButton = require('../main-button');
+var ChildButton = require('../child-button');
 
 function getChildren(children){
   var buttons = {
     main: null,
-    child: []
+    children: []
   };
 
   Children.forEach(children, function(child){
-    if(child.type === MainButton){
+    if (child.type === MainButton) {
       buttons.main = child;
-      return;
+    } else if (child.type === ChildButton) {
+      buttons.children.push(child);
     }
-    buttons.child.push(child);
   });
 
   return buttons;
