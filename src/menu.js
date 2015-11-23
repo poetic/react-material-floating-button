@@ -52,6 +52,7 @@ let Menu = React.createClass({
       'bl',
       'br'
     ]).isRequired,
+    style: React.PropTypes.object,
     children: childrenValidator
   },
 
@@ -82,7 +83,7 @@ let Menu = React.createClass({
     });
 
     return (
-      <div>
+      <div style={this.props.style}>
         { this.props.overlay ? <Overlay isOpen={this.state.isOpen}/> : null }
         <ul className={_className}
             data-mfb-toggle={this.props.method}
