@@ -15,7 +15,7 @@ Package.onUse(function(api) {
 
   api.use([
     'fourseven:scss@3.4.1',
-    'tuul:classnames@0.0.1',
+    'maxharris9:classnames@0.0.1',
     'react@0.1.13'
   ],'client');
 
@@ -30,11 +30,16 @@ Package.onUse(function(api) {
       'reactmfb.js',
 
       'utils/childrenValidator.js',
-      'utils/getChildren.js',
       'utils/getClasses.js',
 
       'components/childButton.jsx',
       'components/mainButton.jsx',
+
+      /*
+       * The order here is important
+       */
+      'utils/getChildren.js',
+
       'components/menu.jsx',
     ],
     'client'

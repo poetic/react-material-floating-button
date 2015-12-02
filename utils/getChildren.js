@@ -4,7 +4,7 @@ getChildren = function getChildren(children){
     children: []
   };
 
-  Children.forEach(children, function(child){
+  React.Children.forEach(children, function(child){
     if (child.type === MainButton) {
       buttons.main = child;
     } else if (child.type === ChildButton) {

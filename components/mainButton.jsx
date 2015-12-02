@@ -1,6 +1,4 @@
-'use strict';
-
-let MainButton = React.createClass({
+MainButton = React.createClass({
   getDefaultProps: function(){
     return {
       href: '#',
@@ -20,15 +18,15 @@ let MainButton = React.createClass({
       ...other
     } = this.props;
 
-    let _className = classnames(
+    let _className = classNames(
       'mfb-component__button--main',
       className
     );
-    let _iconRestingClassName = classnames(
+    let _iconRestingClassName = classNames(
       'mfb-component__main-icon--resting',
       iconRestingClassName
     );
-    let _iconActiveClassName = classnames(
+    let _iconActiveClassName = classNames(
       'mfb-component__main-icon--active',
       iconActiveClassName
     );

@@ -4,7 +4,7 @@ childrenValidator = function childrenValidator(props, propName, componentName){
   var childButtonCount = 0;
   var otherCount = 0;
   var msg;
-  Children.forEach(children, function(child){
+  React.Children.forEach(children, function(child){
     if(child.type === MainButton){
       return mainButtonCount++;
     }

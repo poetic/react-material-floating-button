@@ -1,6 +1,4 @@
-'use strict';
-
-let ChildButton = React.createClass({
+ChildButton = React.createClass({
   render: function(){
     let {
       label,
@@ -10,8 +8,8 @@ let ChildButton = React.createClass({
       ...other
     } = this.props;
 
-    let _className = classnames('mfb-component__button--child', className);
-    let _iconClassName = classnames('mfb-component__child-icon', iconClassName);
+    let _className = classNames('mfb-component__button--child', className);
+    let _iconClassName = classNames('mfb-component__child-icon', iconClassName);
 
     return (
       <li>

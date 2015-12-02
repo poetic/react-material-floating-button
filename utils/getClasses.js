@@ -1,5 +1,5 @@
 getClasses = function getClasses(props){
-  return classnames({
+  return classNames({
     'mfb-zoomin': props.effect === 'zoomin',
     'mfb-slidein': props.effect === 'slidein',
     'mfb-slidein-spring': props.effect === 'slidein-spring',

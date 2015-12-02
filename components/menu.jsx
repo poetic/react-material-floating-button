@@ -32,6 +32,7 @@ let Overlay = React.createClass({
 })
 
 let Menu = React.createClass({
+  displayName: 'reactMfb/menu',
 
   propTypes: {
     effect: React.PropTypes.oneOf([
@@ -68,6 +69,10 @@ let Menu = React.createClass({
     });
   },
 
+  styles: {
+    zIndex: 1000
+  },
+
   render: function() {
     let _className = getClasses(this.props);
     let buttons = getChildren(this.props.children);
@@ -76,8 +81,10 @@ let Menu = React.createClass({
       onClick: this.toggleMenu
     });
 
+    let styles = _.extend({},this.styles, this.props.styles)
+
     return (
-      <div style={this.props.style}>
+      <div style={styles}>
         { this.props.overlay ? <Overlay isOpen={this.state.isOpen}/> : null }
         <ul className={_className}
             data-mfb-toggle={this.props.method}
