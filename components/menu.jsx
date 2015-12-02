@@ -70,7 +70,8 @@ let Menu = React.createClass({
   },
 
   styles: {
-    zIndex: 1000
+    zIndex: 1000,
+    position: 'relative'
   },
 
   render: function() {
