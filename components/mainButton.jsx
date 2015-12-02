@@ -1,8 +1,5 @@
 'use strict';
 
-const React = require('react');
-const classnames = require('classnames');
-
 let MainButton = React.createClass({
   getDefaultProps: function(){
     return {
@@ -45,4 +42,4 @@ let MainButton = React.createClass({
   }
 });
 
-module.exports = MainButton;
+ReactMfb.MainButton = MainButton

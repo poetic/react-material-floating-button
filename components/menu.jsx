@@ -1,11 +1,5 @@
 'use strict';
 
-const React = require('react');
-
-const getClasses = require('./utils/get-classes');
-const getChildren = require('./utils/get-children');
-const childrenValidator = require('./utils/children-validator');
-
 let Overlay = React.createClass({
   getDefaultProps: function () {
     return {
@@ -100,4 +94,4 @@ let Menu = React.createClass({
   }
 });
 
-module.exports = Menu;
+ReactMfb.Menu = Menu

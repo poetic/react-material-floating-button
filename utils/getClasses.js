@@ -1,8 +1,4 @@
-'use strict';
-
-var classnames = require('classnames');
-
-function getClasses(props){
+getClasses = function getClasses(props){
   return classnames({
     'mfb-zoomin': props.effect === 'zoomin',
     'mfb-slidein': props.effect === 'slidein',
@@ -14,5 +10,3 @@ function getClasses(props){
     'mfb-component--br': props.position === 'br'
   }, props.className);
 }
-
-module.exports = getClasses;

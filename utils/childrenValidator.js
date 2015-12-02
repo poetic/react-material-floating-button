@@ -1,11 +1,4 @@
-'use strict';
-
-var Children = require('react').Children;
-
-var MainButton = require('../main-button');
-var ChildButton = require('../child-button');
-
-function childrenValidator(props, propName, componentName){
+childrenValidator = function childrenValidator(props, propName, componentName){
   var children = props[propName];
   var mainButtonCount = 0;
   var childButtonCount = 0;
@@ -35,5 +28,3 @@ function childrenValidator(props, propName, componentName){
     return new Error(msg);
   }
 }
-
-module.exports = childrenValidator;

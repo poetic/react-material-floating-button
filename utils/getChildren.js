@@ -1,11 +1,4 @@
-'use strict';
-
-var Children = require('react').Children;
-
-var MainButton = require('../main-button');
-var ChildButton = require('../child-button');
-
-function getChildren(children){
+getChildren = function getChildren(children){
   var buttons = {
     main: null,
     children: []
@@ -21,5 +14,3 @@ function getChildren(children){
 
   return buttons;
 }
-
-module.exports = getChildren;

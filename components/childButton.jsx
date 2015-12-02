@@ -1,8 +1,5 @@
 'use strict';
 
-const React = require('react');
-const classnames = require('classnames');
-
 let ChildButton = React.createClass({
   render: function(){
     let {
@@ -28,4 +25,4 @@ let ChildButton = React.createClass({
   }
 });
 
-module.exports = ChildButton;
+ReactMfb.ChildButton = ChildButton
