@@ -71,7 +71,7 @@ let Menu = React.createClass({
 
   styles: {
     zIndex: 1000,
-    position: 'relative'
+    position: 'absolute'
   },
 
   render: function() {
