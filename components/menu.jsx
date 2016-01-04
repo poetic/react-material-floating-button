@@ -77,7 +77,7 @@ let Menu = React.createClass({
       onClick: this.toggleMenu
     });
 
-    let styles = _.extend({},this.props.styles)
+    let styles = _.extend({},this.props.styles,{position: 'absolute', zIndex: '1000', bottom: 0, right: 0})
 
     return (
       <div style={styles}>
