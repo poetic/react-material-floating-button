@@ -16,7 +16,6 @@ Package.onUse(function(api) {
   api.use([
     'fourseven:scss@3.4.1',
     'maxharris9:classnames@0.0.1',
-    'react@0.1.13'
   ],'client');
 
   api.addFiles(
