@@ -14,6 +14,7 @@ Package.onUse(function(api) {
   api.versionsFrom('1.2.0.2');
 
   api.use([
+    'ecmascript',
     'fourseven:scss@3.4.1',
     'maxharris9:classnames@0.0.1',
   ],'client');
@@ -30,15 +31,15 @@ Package.onUse(function(api) {
       'utils/childrenValidator.js',
       'utils/getClasses.js',
 
-      'components/childButton.js',
-      'components/mainButton.js',
+      'components/childButton.jsx',
+      'components/mainButton.jsx',
 
       /*
        * The order here is important
        */
       'utils/getChildren.js',
 
-      'components/menu.js',
+      'components/menu.jsx',
     ],
     'client'
   );
