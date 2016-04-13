@@ -1,6 +1,6 @@
 Package.describe({
   name: 'poetic:meteor-react-material-floating-button',
-  version: '0.3.16',
+  version: '0.3.17',
   // Brief, one-line summary of the package.
   summary: 'react-material-floating-button wrapped in meteor',
   // URL to the Git repository containing the source code for this package.
@@ -23,7 +23,7 @@ Package.onUse(function(api) {
       'styles/fountain.import.scss',
       'styles/slidein-spring.import.scss',
       'styles/slidein.import.scss',
-      'styles/zoomin.import.scss'
+      'styles/zoomin.import.scss',
 
       'reactmfb.js',
 
