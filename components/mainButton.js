@@ -1,3 +1,5 @@
+const React = require('react');
+
 MainButton = React.createClass({
   getDefaultProps: function(){
     return {

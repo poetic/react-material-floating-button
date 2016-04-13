@@ -23,8 +23,7 @@ Package.onUse(function(api) {
       'styles/fountain.import.scss',
       'styles/slidein-spring.import.scss',
       'styles/slidein.import.scss',
-      'styles/zoomin.import.scss',
-      'mfb.scss',
+      'styles/zoomin.import.scss'
 
       'reactmfb.js',
 

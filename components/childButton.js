@@ -1,3 +1,5 @@
+const React = require('react');
+
 ChildButton = React.createClass({
   render: function(){
     let {

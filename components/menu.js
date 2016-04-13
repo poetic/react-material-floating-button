@@ -1,3 +1,5 @@
+const React = require('react');
+
 'use strict';
 
 let Overlay = React.createClass({
