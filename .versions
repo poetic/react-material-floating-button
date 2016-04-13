@@ -8,12 +8,12 @@ ecmascript-runtime@0.2.9
 ejson@1.0.10
 fourseven:scss@3.4.2
 jquery@1.11.7
-local-test:poetic:meteor-react-material-floating-button@0.3.17
+local-test:poetic:meteor-react-material-floating-button@0.3.18
 maxharris9:classnames@0.0.1
 meteor@1.1.13
 modules@0.5.2
 modules-runtime@0.6.2
-poetic:meteor-react-material-floating-button@0.3.17
+poetic:meteor-react-material-floating-button@0.3.18
 promise@0.6.6
 random@1.0.8
 underscore@1.0.7
