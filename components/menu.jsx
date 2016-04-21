@@ -1,6 +1,10 @@
-const React = require('react');
+import { checkNpmVersions } from 'meteor/tmeasday:check-npm-versions';
 
-'use strict';
+checkNpmVersions({
+  'react': '0.14.8'
+}, 'poetic:meteor-react-material-floating-button');
+
+const React = require('react');
 
 let Overlay = React.createClass({
   getDefaultProps: function () {

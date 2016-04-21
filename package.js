@@ -1,6 +1,6 @@
 Package.describe({
   name: 'poetic:meteor-react-material-floating-button',
-  version: '0.3.18',
+  version: '0.3.19',
   // Brief, one-line summary of the package.
   summary: 'react-material-floating-button wrapped in meteor',
   // URL to the Git repository containing the source code for this package.
@@ -17,6 +17,7 @@ Package.onUse(function(api) {
     'ecmascript',
     'fourseven:scss@3.4.1',
     'maxharris9:classnames@0.0.1',
+    'tmeasday:check-npm-versions@0.3.1',
   ],'client');
 
   api.addFiles(

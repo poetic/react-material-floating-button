@@ -1,3 +1,9 @@
+import { checkNpmVersions } from 'meteor/tmeasday:check-npm-versions';
+
+checkNpmVersions({
+  'react': '0.14.8'
+}, 'poetic:meteor-react-material-floating-button');
+
 const React = require('react');
 
 MainButton = React.createClass({
