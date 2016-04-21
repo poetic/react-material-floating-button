@@ -1,3 +1,11 @@
+import { checkNpmVersions } from 'meteor/tmeasday:check-npm-versions';
+
+checkNpmVersions({
+  'react': '0.14.8'
+}, 'poetic:meteor-react-material-floating-button');
+
+const React = require('react');
+
 childrenValidator = function childrenValidator(props, propName, componentName){
   var children = props[propName];
   var mainButtonCount = 0;
