@@ -4,12 +4,12 @@ caching-compiler@1.0.4
 ecmascript@0.4.3
 ecmascript-runtime@0.2.10
 fourseven:scss@3.4.2
-local-test:poetic:meteor-react-material-floating-button@0.3.19
+local-test:poetic:meteor-react-material-floating-button@0.3.20
 maxharris9:classnames@0.0.1
 meteor@1.1.14
 modules@0.6.1
 modules-runtime@0.6.3
-poetic:meteor-react-material-floating-button@0.3.19
+poetic:meteor-react-material-floating-button@0.3.20
 promise@0.6.7
 random@1.0.9
 tmeasday:check-npm-versions@0.3.1
