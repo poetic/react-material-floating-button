@@ -1,7 +1,7 @@
 import { checkNpmVersions } from 'meteor/tmeasday:check-npm-versions';
 
 checkNpmVersions({
-  'react': '15.0.0'
+  'react': '15.0.2'
 }, 'poetic:meteor-react-material-floating-button');
 
 const React = require('react');
